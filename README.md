@@ -12,4 +12,4 @@ Autoría:
 En conjunto Antonio Napoleón Ramírez Garcia de Alba, Federico Mingramm Ramírez Wiella y Andrés Cárdenas González
 
 Propiedad:
-ORDEN DEL FENIX S.A.P.I. DE C.V. y sus miembros
+ORDEN DEL FENIX S.A.P.I. DE C.V.
