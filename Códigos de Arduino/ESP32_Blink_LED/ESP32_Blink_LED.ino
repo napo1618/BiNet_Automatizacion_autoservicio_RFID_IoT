@@ -1,5 +1,6 @@
 //Para hacer esta prueba de funcionamiento con el ESP32, 
 //haremos parpadear el LED interno de la tarjeta que es el pin 2
+//Al cargar es necesario estar presionando el boton derecho (boot) del ESP para que haga conexión
 
 int LED_BUILTIN = 2;
 
