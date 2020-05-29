@@ -5,6 +5,8 @@
 
   El programa original (autor:bitwiseAr) creó el programa para usarse con Arduino, sólo haré
   las modificaciones necesarias para usar el programa con un ESP32
+
+  Modificador: AndresCans
   
   * Typical pin layout used:
  * ---------------------------------------------------------------------------------------------------
