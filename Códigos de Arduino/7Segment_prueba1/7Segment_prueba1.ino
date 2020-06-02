@@ -8,7 +8,7 @@
 #include "LedController.hpp"
 
 /*
- Now we need a LedControl to work with.
+ Now we need a LedControl to work with. 
  ***** These pin numbers will probably not work with your hardware *****
  pin 22 is connected to the DataIn 
  pin 18 is connected to the CLK 
@@ -40,25 +40,28 @@ void setup() {
  This method will display the characters for the
  word "Arduino" one after the other on digit 0. 
  */
+ 
 void writeArduinoOn7Segment() {
-  lc.setChar(0,6,'A',false);
+  lc.setRow(0,7,0x00);            //Display 7
   //delay(delaytime);
-  lc.setRow(0,5,0x05);
+  lc.setChar(0,6,'A',false);      //Display 6
   //delay(delaytime);
-  lc.setChar(0,4,'d',false);
+  lc.setRow(0,5,0x05);            //Display 5
   //delay(delaytime);
-  lc.setRow(0,3,0x1c);
+  lc.setChar(0,4,'d',false);      //Display 4
   //delay(delaytime);
-  lc.setRow(0,2,B00010000);
+  lc.setRow(0,3,0x1c);            //Display 3
   //delay(delaytime);
-  lc.setRow(0,1,0x15);
+  lc.setRow(0,2,B00010000);       //Display 2
   //delay(delaytime);
-  lc.setRow(0,0,0x1D);
+  lc.setRow(0,1,0x15);            //Display 1
+  //delay(delaytime);
+  lc.setRow(0,0,0x1D);            //Display 0
   //delay(delaytime);
   //lc.clearMatrix();
   //delay(delaytime);
 } 
-
+*/
 /*
   This method will scroll all the hexa-decimal
  numbers and letters on the display. You will need at least
@@ -75,8 +78,9 @@ void scrollDigits() {
   lc.clearMatrix();
   delay(delaytime);
 }
-*/
+
 void loop() { 
   writeArduinoOn7Segment();
   //scrollDigits();
+ 
 }
